@@ -1,0 +1,47 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+
+<div class="col-8 mx-auto mt-3 rounded-3">
+    <ul class="list-group p-4">
+        <a href="https://www.instagram.com/nka.kch/" class="list-group-item list-group-item-action text-white" style="background-color:var(--blue-color);">Instagram: <span>nka.kch</span></a>                    
+        <a href="https://www.snapchat.com/add/nka.kch?share_id=fvsAGe4I8nQ&locale=de-DE" class="list-group-item list-group-item-action text-white" style="background-color: var(--info-color);">Snapchat: <span>nka.kch</span></a>
+    </ul>
+</div>
+
+<div id="carouselExampleIndicators" class="d-flex justify-content-center carousel slide mt-5 mb-5" data-bs-ride="carousel" style="margin-left: 10%; margin-right:10%;">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner text-center">
+        <div class="carousel-item active rounded-3" style="background-color: var(--info-color); min-height: 300px;">
+            <blockquote class="text-white text-center pt-5" style="font-size: 18px; font-weight: bold;">What's the point in breathing, if you don't live?</blockquote>
+            <p class="text-white text-center" style="padding-bottom: 50px; font-style: italic;">- Niklas Koch</p>
+        </div>
+        <div class="carousel-item rounded-3" style="background-color: var(--info-color); min-height: 300px;">
+            <blockquote class="text-white text-center pt-5" style="font-size: 18px; font-weight: bold;">Make sure your life is worth watching</blockquote>
+            <p class="text-white text-center" style="padding-bottom: 50px; font-style: italic;">- Niklas Koch</p>
+        </div>
+        <div class="carousel-item rounded-3" style="background-color: var(--info-color); min-height: 300px;">
+            <blockquote class="text-white text-center pt-5" style="font-size: 18px; font-weight: bold;">If you focus on the hurt, you will suffer. If you focus on the lesson, you will continue to grow</blockquote>
+            <p class="text-white text-center" style="padding-bottom: 50px; font-style: italic;">- Unkown</p>
+        </div>
+        <div class="carousel-item rounded-3" style="background-color: var(--info-color); min-height: 300px;">
+            <blockquote class="text-white text-center pt-5" style="font-size: 18px; font-weight: bold;">Remember that guy that gave up? Yeah, nobody does.</blockquote>
+            <p class="text-white text-center" style="padding-bottom: 50px; font-style: italic;">- Unkown</p>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+{% endblock %}

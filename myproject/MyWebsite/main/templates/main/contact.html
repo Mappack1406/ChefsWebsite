@@ -1,0 +1,20 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+<div class="d-flex justify-content-xxl-center mt-5 p-4 rounded-3 text-end" 
+style="background-color: var(--blue-color); margin-left: 37%; margin-right:37%;">
+    <form method="POST">
+        <h2 class="text-start text-bold text-white pb-2">Kontakt</h1>
+        {% csrf_token %}
+        <div class="mb-2">{{ form.Vorname }}</div>
+        <div class="mb-3">{{ form.Name }}</div>
+        <div class="mb-3">{{ form.Email }}</div>
+        <div class="mb-3">{{ form.Nachricht }}</div>
+
+        <input type="submit" value="Submit" class="btn bg-info">
+    </form>
+</div>
+
+
+
+{% endblock %}
